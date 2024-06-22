@@ -78,4 +78,102 @@ class LRUCache {
  * int param_1 = obj.get(key);
  * obj.put(key,value);
  */
-  
+
+Solution using DLL:
+class LRUCache {
+   class ListNode {
+        int key;
+        int value;
+        ListNode next;
+        ListNode prev;
+
+        public ListNode(int key, int value) {
+            this.key = key;
+            this.value = value;
+        }
+   }
+   
+   ListNode[] map;
+   int capacity;
+   ListNode head;
+   ListNode tail;
+   int size;
+    public LRUCache(int capacity) {
+        this.capacity = capacity;
+        map = new ListNode[10_000+1];
+        head = new ListNode(-1, -1);
+        tail = new ListNode(-1, -1);
+        head.next = tail;
+        tail.prev = head;
+        size = 0;
+    }
+    public void addFirst(ListNode node) {
+        if (null == node) {
+            return;
+        }
+
+        node.next = head.next;
+        node.next.prev = node;
+        head.next = node;
+        node.prev = head;
+    }
+
+    public void remove(ListNode node) {
+        if (null == node) {
+            return;
+        }
+
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+    }
+
+    public int removeLast() {
+        if (head == tail.prev) {
+            return -1;
+        }
+
+        int key = tail.prev.key;
+        remove(tail.prev);
+        return key;
+    }
+
+    public int get(int key) {
+        ListNode node = map[key];
+        if (null != node) {
+            remove(node); // Remove
+            addFirst(node); // Add first
+            return node.value;
+        }
+
+        return -1;
+    }
+ 
+    
+    public void put(int key, int value) {
+         if (null == map[key]) {
+            if (capacity == size) {
+                int k = removeLast();
+                if (-1 != k) {
+                    map[k] = null;
+                    size--;
+                }
+            }
+         } else {
+             remove(map[key]);
+             map[key] = null;
+             size--;
+         }
+
+        ListNode node = new ListNode(key, value);
+        addFirst(node);
+        map[key] = node;
+        size++;      
+    }
+}
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
