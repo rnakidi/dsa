@@ -27,4 +27,76 @@ This gives an idea to us that, this is a good problem for DP(Dynamic Programming
 Let's keep the step "Memorization" aside for now and come up with an algorith/code which involves both "Recursion" + "Guessing".
 "Guessing" because we need to guess the profit from both the ends - "left" and "right" and chose the one which has maximum profit value.
 
+  2. Recursion + Guessing (T:O(2^n), S:O(n))
+  class Solution {
+	
+	  public int util(int[] prices, int begin, int end, int year) {
+		  if (begin > end) {
+			    return 0;
+		  }
+		
+		  if (begin == end) {
+			    return year * prices[begin];
+		  }
+		
+		  int left = year*prices[begin] + util(prices, begin + 1, end, year + 1);
+		  int right = year*prices[end] + util(prices, begin, end - 1, year + 1);
+      
+		  return Math.max(left,  right);
+	  }
+	
+	  public int maxProfit(int[] prices, int n) {
+		  return util(prices, 0, n - 1, 1);
+	  }
+}
+
+3. Memorization (T:O(n^2), S:O(n^2))
+  #2 will be taking execution time in exponentional- O(2^n). So, apply memorization to reduce the time complexity to polynomial -  O(n^2).
+    class Solution {
+	
+	  public int util(int[] prices, int begin, int end, int year, int[][] dp) {
+		  if (begin > end) {
+			    return 0;
+		  }
+		
+		  if (begin == end) {
+			    return year * prices[begin];
+		  }
+
+      if (dp[begin][end] != 0) {
+			    return dp[begin][end];
+      }		
+		
+		  int left = year*prices[begin] + util(prices, begin + 1, end, year + 1);
+		  int right = year*prices[end] + util(prices, begin, end - 1, year + 1);
+      
+		  return dp[begin][end] = Math.max(left,  right);
+	  }
+	
+	  public int maxProfit(int[] prices, int n) {
+      int[][] dp = new int[n][n];
+		  return util(prices, 0, n - 1, 1, dp);
+	  }
+}
+
+4. Iteration approach with Memorization - (T:O(n^2), S:O(n^2))
+    class Solution {
+	public int maxProfitIteration(int[] prices, int n) {
+		int[][] dp = new int[n][n];
+		for (int i = 0; i < n; i++) {
+			dp[i][i] = n * prices[i];
+		}
+		
+		for (int begin = n-2; begin >= 0; begin--) {
+			for (int end = begin + 1; end < n; end++) {
+        int year = n - (end - begin); // n + 1 - (end - begin + 1)				
+				int left = year*prices[begin] + dp[begin+1][end];
+				int right = year*prices[end] + dp[begin][end-1];
+				dp[begin][end] = Math.max(left,  right);
+			}
+		}
+		
+		return dp[0][n-1];
+	}
+}  
   
