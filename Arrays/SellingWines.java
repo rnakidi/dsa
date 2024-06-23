@@ -56,16 +56,16 @@ Let's keep the step "Memorization" aside for now and come up with an algorith/co
 	
 	  public int util(int[] prices, int begin, int end, int year, int[][] dp) {
 		  if (begin > end) {
-			    return 0;
+			return 0;
 		  }
 		
 		  if (begin == end) {
-			    return year * prices[begin];
+			return year * prices[begin];
 		  }
 
-      if (dp[begin][end] != 0) {
-			    return dp[begin][end];
-      }		
+      		  if (dp[begin][end] != 0) {
+			return dp[begin][end];
+      		  }		
 		
 		  int left = year*prices[begin] + util(prices, begin + 1, end, year + 1);
 		  int right = year*prices[end] + util(prices, begin, end - 1, year + 1);
@@ -74,7 +74,7 @@ Let's keep the step "Memorization" aside for now and come up with an algorith/co
 	  }
 	
 	  public int maxProfit(int[] prices, int n) {
-      int[][] dp = new int[n][n];
+      		  int[][] dp = new int[n][n];
 		  return util(prices, 0, n - 1, 1, dp);
 	  }
 }
@@ -89,7 +89,7 @@ Let's keep the step "Memorization" aside for now and come up with an algorith/co
 		
 		for (int begin = n-2; begin >= 0; begin--) {
 			for (int end = begin + 1; end < n; end++) {
-        int year = n - (end - begin); // n + 1 - (end - begin + 1)				
+        			int year = n - (end - begin); // n + 1 - (end - begin + 1)				
 				int left = year*prices[begin] + dp[begin+1][end];
 				int right = year*prices[end] + dp[begin][end-1];
 				dp[begin][end] = Math.max(left,  right);
