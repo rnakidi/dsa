@@ -23,7 +23,7 @@ Constraints:
 1 <= nums.length <= 100
 0 <= nums[i] <= 400
 
-Solution (T:O(n), S:O(n))
+Solution (T:O(n), S:O(n)) - Iteration + Memorization
 
   class Solution {
     public int rob(int[] nums) {
