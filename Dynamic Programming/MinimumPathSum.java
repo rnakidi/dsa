@@ -21,16 +21,12 @@ n == grid[i].length
 1 <= m, n <= 200
 0 <= grid[i][j] <= 200
   
-Solution: Iterative Approach with Memorization - (T:O(n^2), S:O(n^2))
+Solution: Iterative Approach with Memorization - (T:O(m*n), S:O(m*n))
   
 class Solution {
     public int minPathSum(int[][] grid) {
         int r = grid.length;
         int c = grid[0].length;
-        if (0 == r) {
-            return 0;
-        }
-
         int[][] dp = new int[r][c];
         dp[0][0] = grid[0][0];
         for (int i = 1; i < c; i++) {
