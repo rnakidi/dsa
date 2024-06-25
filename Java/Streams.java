@@ -407,7 +407,9 @@ class StringUtil {
 		System.out.println(max);
 		max = listOfList.stream().flatMap(a -> a.stream()).max((a,b) -> a-b).orElseGet(() -> -1);
 		System.out.println(max);
-
+		List<Integer> values = Arrays.asList(3, 5, 8, 9, 12);
+		int sum = values.stream().reduce(0, (i1, i2) -> i1 + i2);
+		System.out.println("sum=" + sum);
 	}
 }
 public class MyString {
