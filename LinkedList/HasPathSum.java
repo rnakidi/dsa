@@ -112,6 +112,42 @@ class Solution {
     }
 }
 
+Solution(1ms - bfs - Queue - T:O(n), S:O(n)
+class Solution {
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if (null == root) {
+            return false;
+        }
+
+        Stack<TreeNode> stack = new Stack<>();
+        Stack<Integer> sums = new Stack<>();
+        sums.push(root.val);
+        stack.add(root);
+        while(!stack.isEmpty()) {
+            int size = stack.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = stack.pop();
+                int sum = sums.pop();
+                if (sum == targetSum && null == node.left && null == node.right) {
+                    return true;
+                }
+
+                if (null != node.left) {
+                    stack.push(node.left);
+                    sums.push(sum + node.left.val);
+                }
+
+                if (null != node.right) {
+                    stack.push(node.right);
+                    sums.push(sum + node.right.val);
+                }
+            }
+        }
+
+        return false;
+    }
+}
+
 Solution(2ms - BFS - Stack - T:O(n), S:O(n))
 /**
  * Definition for a binary tree node.
