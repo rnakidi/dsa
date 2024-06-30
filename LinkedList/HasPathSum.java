@@ -62,7 +62,6 @@ class Solution {
 }
 
 Solution(1ms - bfs - Queue - T:O(n), S:O(n)
-Java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -80,34 +79,35 @@ Java
  */
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
-        if(root == null) return false;
-        Queue<TreeNode> q1 = new LinkedList<>();
-        Queue<Integer> q2 = new LinkedList<>();
-        q1.add(root);
-        q2.add(root.val);
-        
-        while(!q1.isEmpty()){
-            int n = q1.size();
+        if (null == root) {
+            return false;
+        }
 
-            for(int i = 0; i < n; i++){
-                TreeNode node = q1.poll();
-                int pathSum = q2.poll(); 
-                 
-                if(pathSum == targetSum && node.left == null && node.right == null)
-                {
+        Queue<TreeNode> que = new LinkedList<>();
+        Queue<Integer> sums = new LinkedList<>();
+        sums.add(root.val);
+        que.add(root);
+        while(!que.isEmpty()) {
+            int size = que.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = que.poll();
+                int sum = sums.poll();
+                if (sum == targetSum && null == node.left && null == node.right) {
                     return true;
                 }
-                if(node.left != null){
-                    q1.add(node.left);
-                    q2.add(pathSum + node.left.val);
+
+                if (null != node.left) {
+                    que.add(node.left);
+                    sums.add(sum + node.left.val);
                 }
-                if(node.right != null){
-                    q1.add(node.right);
-                    q2.add(pathSum + node.right.val);
+
+                if (null != node.right) {
+                    que.add(node.right);
+                    sums.add(sum + node.right.val);
                 }
-                
             }
         }
+        
         return false;
     }
 }
