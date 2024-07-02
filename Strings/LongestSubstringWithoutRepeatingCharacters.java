@@ -67,7 +67,7 @@ class Solution {
 }
 
 Solution-II(T:O(n), S:O(n))
-class Solution4 {
+class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (null == s || 0 == s.length()) {
             return 0;
@@ -96,7 +96,7 @@ class Solution4 {
     }
 }
 Solution-III(T:O(n), S:O(1))
-class Solution4 {
+class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (null == s || 0 == s.length()) {
             return 0;
