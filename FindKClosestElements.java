@@ -23,7 +23,7 @@ Constraints:
 arr is sorted in ascending order.
 -104 <= arr[i], x <= 104
   
-Solution-I(T(logN), S:O(1))
+Solution-I(T(logN), S:O(1), 3ms)
   class Solution {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
         List<Integer> ans = new ArrayList<>();
@@ -47,6 +47,30 @@ Solution-I(T(logN), S:O(1))
         return ans;
     }
 }
+
+Note: Line #42-45, will take most of time to construct the output list. So, if we replace this by user defined list then it will take almost 0 ms.
+  return new IntList(arr, left, k);
+    private static final class IntList extends java.util.AbstractList<Integer> {
+        final int[] data;
+        final int offset, size;        
+
+        IntList(final int[] data, final int offset, final int size) {
+            this.data = data;
+            this.offset = offset;
+            this.size = size;
+        }
+
+        @Override
+        public Integer get(final int index) {
+            if (index < 0 || index >= size) throw new IndexOutOfBoundsException(index);
+            return data[index + offset];
+        }
+
+        @Override
+        public int size() {
+            return size;
+        }
+    }
 
 Solution-II(T:O(n), S:O(1))
 class Solution {
