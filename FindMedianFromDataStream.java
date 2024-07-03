@@ -37,7 +37,7 @@ Follow up:
 If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
 If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
 
-Solution
+Solution(T:O(LogN) for addNum, O(1) for findMedian, T:O(N));
 class MedianFinder {
     PriorityQueue<Integer> high = new PriorityQueue(Collections.reverseOrder());
     PriorityQueue<Integer> low = new PriorityQueue();
