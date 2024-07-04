@@ -22,21 +22,22 @@ Constraints:
 0 <= k <= 106
 
 Solution(T:O(n), S:O(1))
-Solution
-  class Solution {
+class Solution {
     public int numSubarrayProductLessThanK(int[] nums, int k) {                
         int n = nums.length;
-        int i = 0, j = 0, ans = 0;
+        int right = 0;
+        int left = 0;
+        int ans = 0;
         int prod = 1;
 
-        while(j < n) {
-            prod *= nums[j];
-            while(prod >= k && i <= j) {
-                prod /= nums[i];
-                i++;
+        while (right < n) {
+            prod *= nums[right];
+            while (prod >= k && left <= right) {
+                prod /= nums[left];
+                left++;
             }
-            ans += (j - i + 1);
-            j++;
+            ans += (right - left + 1);
+            right++;
         }
 
         return ans;
