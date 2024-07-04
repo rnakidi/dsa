@@ -60,7 +60,7 @@ class Solution {
     }
 }
 
-Solution (T:O(m+n), S:O(n))
+Solution (T:O(m+n), S:O(1))
   
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
