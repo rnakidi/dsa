@@ -34,7 +34,7 @@ class Solution {
             maxLevel = level;
         }
 
-        util(root.right, ans, level + 1);
+        util(root.left, ans, level + 1);
         util(root.left, ans, level + 1);        
     }
 }
