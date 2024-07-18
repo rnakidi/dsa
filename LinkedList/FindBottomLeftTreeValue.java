@@ -16,7 +16,7 @@ Constraints:
 The number of nodes in the tree is in the range [1, 104].
 -231 <= Node.val <= 231 - 1
 
-Solution(T:O(n), S:O(1))
+Solution(T:O(n), S:O(1)) - DFS
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -57,3 +57,32 @@ class Solution {
         util(root.right, level + 1);
     }
 }
+
+Solution(T:O(n), S:O(1)) - BFS
+class Solution {
+    public int findBottomLeftValue(TreeNode root) {
+        if (null == root) {
+            return -1;
+        }
+        
+        int res = root.val;
+        Queue<TreeNode> que = new LinkedList<>();
+        que.add(root);
+        
+        while (!que.isEmpty()) {
+            TreeNode node = que.poll();
+            
+            if (null != node.left) {
+                que.add(node.left);
+                res = node.left.val;
+            }
+
+            if (null != root.right) {
+                que.add(root.right);
+            }
+        }
+                
+        return res;
+    }    
+}
+
