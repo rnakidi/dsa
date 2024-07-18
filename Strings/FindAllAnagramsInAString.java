@@ -39,7 +39,6 @@ class Solution {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
 
-        int len = Integer.MAX_VALUE;
         int count = map.size();
         int begin = 0;
         int end = 0;
