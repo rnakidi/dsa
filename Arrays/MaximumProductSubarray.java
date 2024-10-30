@@ -20,7 +20,7 @@ Constraints:
 -10 <= nums[i] <= 10
 The product of any subarray of nums is guaranteed to fit in a 32-bit integer.
 
-T(O(n)), S(O(1)):
+I: T(O(n)), S(O(1)):
 We are basically using Kadane's algo and instead of just curMax, will use curMax and curMin
 to handle the case when the product is negative.
 
@@ -44,3 +44,24 @@ class Solution {
         return ans;
     }
 }
+
+II: T(O(n^2)), S(O(1)) - Brute Force
+ class Solution {
+    public int maxProduct(int[] nums) {
+        if (1 == nums.length) {
+            return nums[0];
+        }
+
+        int max = nums[0]; // Integer.MAX_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+          int prod = 1;
+          for (int j = i; j < nums.length; j++) {
+               prod *= nums[j];
+               max = Math.max(max, prod);
+          }
+        }
+
+        return max;
+    }
+}
+ 
