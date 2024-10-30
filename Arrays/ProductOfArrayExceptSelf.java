@@ -31,7 +31,7 @@ class Solution {
         int n = nums.length;
         int[] output = new int[n];
         output[0] = 1;
-        for (int i = 1; i < n; i ++) {
+        for (int i = 1; i < n; i++) {
             output[i] =  output[i-1] * nums[i-1];
         }
 
