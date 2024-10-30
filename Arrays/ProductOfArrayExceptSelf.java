@@ -20,8 +20,27 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
 
 Follow up: Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)
 
+T(O(n)), S(O(n)):
+           
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-        
+        if (null == nums || 0 == nums.length) {
+            return new int[] {};
+        }
+
+        int n = nums.length;
+        int[] output = new int[n];
+        output[0] = 1;
+        for (int i = 1; i < n; i ++) {
+            output[i] =  output[i-1] * nums[i-1];
+        }
+
+        int prefix = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            output[i] = output[i] * prefix;
+            prefix = prefix * nums[i];
+        }
+
+        return output;        
     }
 }
