@@ -42,7 +42,21 @@ class Solution {
     }
 }
 
-Approach-II: Using 2 XORs
+Approach-II: Using 2 XORs(T(O(n)), S(O(1))
+ class Solution {
+    public int missingNumber(int[] nums) {
+        int ans = 0;
+        for (int i = 1; i <= nums.length; i++) {
+            ans = ans ^ i;
+        }
+
+        for (int num : nums) {
+            ans = ans ^ num;
+        }
+
+        return ans;
+    }
+}
  
 Approach-III: Using integer array with on/off flagT(O(n)), S(O(n))
 class Solution {
