@@ -42,4 +42,22 @@ class Solution {
     }
 }
 
-Approach-II: Using integer array
+Approach-II: Using 2 XORs
+ 
+Approach-III: Using integer array with on/off flagT(O(n)), S(O(n))
+class Solution {
+    public int missingNumber(int[] nums) {
+        int[] count = new int[nums.length + 1];
+         for (int num : nums) {
+            count[num] = 1;
+        }
+        
+        for (int i = 0; i < count.length; i++) {
+            if (0 == count[i]) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+}
