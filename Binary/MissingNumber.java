@@ -30,7 +30,19 @@ All the numbers of nums are unique.
 
 Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?
 
-Approach-I: Using sum of elements(T(O(n)), S(O(1))
+ Approach-I: Using sum of elements(T(O(n)), S(O(1))
+ class Solution {
+
+    public int missingNum(int[] arr) {
+    	int ans = arr.length;
+        for (int i = 0; i < arr.length; i++) {
+       			ans += i - arr[i];
+        }
+        return ans;
+    }
+}
+
+Approach-II: Using sum of elements(T(O(n)), S(O(1))
 class Solution {
     public int missingNumber(int[] nums) {
         int len = nums.length;
@@ -42,7 +54,7 @@ class Solution {
     }
 }
 
-Approach-II: Using 2 XORs(T(O(n)), S(O(1))
+Approach-III: Using 2 XORs(T(O(n)), S(O(1))
  class Solution {
     public int missingNumber(int[] nums) {
         int ans = 0;
@@ -58,7 +70,7 @@ Approach-II: Using 2 XORs(T(O(n)), S(O(1))
     }
 }
  
-Approach-III: Using integer array with on/off flagT(O(n)), S(O(n))
+Approach-IV: Using integer array with on/off flagT(O(n)), S(O(n))
 class Solution {
     public int missingNumber(int[] nums) {
         int[] count = new int[nums.length + 1];
