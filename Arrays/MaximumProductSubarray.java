@@ -45,6 +45,26 @@ class Solution {
     }
 }
 
+An another approach which has better performance than the above one.
+ class Solution {
+    public int maxSubArray(int[] nums) {
+        int maxSum = nums[0];
+        int curSum = 0;
+        int res = nums[0];
+        for (int num : nums) {
+            curSum += num;
+            if (curSum > maxSum) {
+                maxSum = curSum;
+            }
+
+            if (curSum < 0) {
+                curSum = 0; // reset
+            }
+        }
+        return maxSum;
+    }
+}
+
 II: T(O(n^2)), S(O(1)) - Brute Force
  class Solution {
     public int maxProduct(int[] nums) {
