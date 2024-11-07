@@ -23,7 +23,7 @@ Constraints:
 0 <= s.length <= 5 * 104
 s consists of English letters, digits, symbols and spaces.
 
-Solution-I(T:O(n), S:O(1))
+Solution-I(T:O(n), S:O(1)): Use sliding window
   
 class Solution {
     public int lengthOfLongestSubstring(String s) {
