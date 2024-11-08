@@ -65,3 +65,31 @@ class Solution {
         return water;        
     }
 }
+
+Another approach faster than above one.
+class Solution {
+    public int trap(int[] height) {
+        int leftCurr = 0; // current left
+        int rightCurr = height.length - 1; // current right
+
+        int leftMaxHeight = 0;
+        int rightMaxHeight = 0;
+        int maxTrapped = 0;
+
+        while (leftCurr < rightCurr) {
+            // When leftMax < rightMax, 
+            // we can GUARANTEE that the water level at the left pointer will be determined by leftMax
+            if (height[leftCurr] < height[rightCurr]) {
+                leftMaxHeight = Math.max(leftMaxHeight, height[leftCurr]);
+                maxTrapped += leftMaxHeight - height[leftCurr];
+                leftCurr++;
+            } else {
+                rightMaxHeight = Math.max(rightMaxHeight, height[rightCurr]);
+                maxTrapped += rightMaxHeight - height[rightCurr];
+                rightCurr--;
+            }
+        }
+
+        return maxTrapped;
+    }
+}
