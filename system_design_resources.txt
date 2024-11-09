@@ -1,0 +1,62 @@
+System Design Resources
+56 Amazing resources to level up your system design as a software engineer
+
+• Amazing Technical Blogs
+
+► System Design Newsletter https://lnkd.in/ePa9WCGx
+►High Scalability https://lnkd.in/eQ4eDw4E
+►System Design Primer https://lnkd.in/ebVF3DSs
+►System Design Course https://lnkd.in/eb5W4vXb
+►Engineering at Meta https://lnkd.in/e8tiSkEv
+►AWS Architecture Blog https://lnkd.in/eEchKJif
+►All Things Distributed https://lnkd.in/emXaQDaS
+►The Netflix Tech Blog https://lnkd.in/efPuR39b
+►LinkedIn Engineering Blog https://lnkd.in/ehaePQth
+►Uber Engineering Blog https://eng.uber.com/
+►Engineering at Quora https://lnkd.in/em-WkhJd
+►Pinterest Engineering https://lnkd.in/esBTntjq
+►Lyft Engineering Blog https://eng.lyft.com/
+►Twitter Engineering Blog https://lnkd.in/evMFNhEs
+►Dropbox Engineering Blog https://dropbox.tech/
+►Spotify Engineering https://lnkd.in/eJerVRQM
+►Github Engineering https://lnkd.in/eCADWt8x
+►Instagram Engineering https://lnkd.in/e7Gag8m5
+►Canva Engineering Blog https://canvatechblog.com/
+►Etsy Engineering https://lnkd.in/eddzzKRt
+►Booking.com Tech Blog https://blog.booking.com/
+►Expedia Technology https://lnkd.in/ehjuBE5J
+►The Airbnb Tech Blog https://lnkd.in/emGrJbGM
+►Stripe Engineering Blog https://lnkd.in/em6Svgyx
+►Ebay Tech Blog https://tech.ebayinc.com/
+►Flickr's Tech Blog https://code.flickr.net/
+
+• System Design Fundamentals
+
+1. Scalability: https://lnkd.in/gpge_z76
+2. Latency vs Throughput: https://lnkd.in/g_amhAtN
+3. CAP Theorem: https://lnkd.in/g3hmVamx
+4. ACID Transactions: https://lnkd.in/gMe2JqaF
+5. Rate Limiting: https://lnkd.in/gWsTDR3m
+6. API Design: https://lnkd.in/ghYzrr8q
+7. Strong vs Eventual Consistency: https://lnkd.in/gJ-uXQXZ
+8. Distributed Tracing: https://lnkd.in/d6r5RdXG
+9. Synchronous vs. asynchronous communications: https://lnkd.in/gC3F2nvr
+10. Batch Processing vs Stream Processing: https://lnkd.in/g4_MzM4s
+11. Databases: https://lnkd.in/gti8gjpz
+12. Horizontal & Vertical Scaling: https://lnkd.in/gAH2e9du
+13. Caching: https://lnkd.in/gC9piQbJ
+14. Distributed Caching: https://lnkd.in/g7WKydNg
+15. Load Balancing: https://lnkd.in/gQaa8sXK
+16. SQL vs NoSQL: https://lnkd.in/g3WC_yxn
+17. Database Scaling: https://lnkd.in/gAXpSyWQ
+18. Data Replication: https://lnkd.in/gVAJxTpS
+19. Data Redundancy: https://lnkd.in/gNN7TF7n
+20. Database Sharding: https://lnkd.in/gMqqc6x9
+21. Database Index's: https://lnkd.in/gCeshYVt
+23. WebSocket: https://lnkd.in/g76Gv2KQ
+24. API Gateway: https://lnkd.in/gnsJGJaM
+25. Message Queues: https://lnkd.in/gTzY6uk8
+26. Event-Driven Arch. : https://lnkd.in/dp8CPvey
+27. Client-Server Arch.: https://lnkd.in/dAARQYzq
+28. Serverless Arch.: https://lnkd.in/gQNAXKkb
+29. Microservices Arch.: https://lnkd.in/gFXUrz_T
