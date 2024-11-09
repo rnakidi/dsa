@@ -1,0 +1,55 @@
+DSA 10 Day Preparation
+If you have a coding interview in 10 days and you’re revising, here’s a list of questions to get a headstart. 
+
+Covers almost all of the critical DSA concepts and questions:
+
+- https://lnkd.in/eaC5hfaa
+- https://lnkd.in/ehe5VFQV
+- https://lnkd.in/eMbrw8Yh
+- https://lnkd.in/eg2hEzD6
+- https://lnkd.in/ejY9ed3R
+- https://lnkd.in/eNP8geMw
+- https://lnkd.in/emY_RaxM
+- https://lnkd.in/ezSHZtkP
+- https://lnkd.in/eAkbPfjb
+- https://lnkd.in/ekAsN67R
+- https://lnkd.in/ecMuhNRJ
+- https://lnkd.in/eTs6dnYr
+- https://lnkd.in/efvkpvJ8
+- https://lnkd.in/ezh6Fv9J
+- https://lnkd.in/eH9TRvDa
+- https://lnkd.in/eqFsYNWq
+- https://lnkd.in/esPPaCR3
+- https://lnkd.in/eTkmSn3U
+- https://lnkd.in/eE8-JaeA
+- https://lnkd.in/eBGSbNYE
+- https://lnkd.in/eMj3jsbn
+- https://lnkd.in/eyHQGZKv
+- https://lnkd.in/eibujp7h
+- https://lnkd.in/e6kgR36n
+- https://lnkd.in/e8SrnqxQ
+- https://lnkd.in/eqCrQet7
+- https://lnkd.in/eSfxgqgz
+- https://lnkd.in/eMmfBeUq
+- https://lnkd.in/ecAkWpBm
+- https://lnkd.in/eW8p6v7c
+- https://lnkd.in/etdM6dnU
+- https://lnkd.in/eZyt94bt
+- https://lnkd.in/eurUPNth
+- https://lnkd.in/e6s5eXfj
+- https://lnkd.in/e7deX-a5
+- https://lnkd.in/em7ii5xg
+- https://lnkd.in/eh7_Syhi
+- https://lnkd.in/ezYSt2tm
+- https://lnkd.in/efS5nVPG
+- https://lnkd.in/eSJevkrt
+- https://lnkd.in/eQ7Kt-x7
+- https://lnkd.in/ek7CXVAW
+- https://lnkd.in/exbwhtV4
+- https://lnkd.in/eCENY7B7
+- https://lnkd.in/eXRF6huD
+- https://lnkd.in/eiKedG8D
+- https://lnkd.in/ep-iFw4f
+- https://lnkd.in/eKg_QSm3
+- https://lnkd.in/e32MME4r
+- https://lnkd.in/eQUatjPt
