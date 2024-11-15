@@ -32,3 +32,32 @@ FAANG/MAANG Prep:
 Array, Binary Search, Sliding Window, Matrix, Two Pointer, Intervals, Hash Map, String, Recursion, DP, Trees, Graph, Linked List, Stack, Queue & Heap
 
 ✅ 𝐂𝐫𝐚𝐜𝐤𝐢𝐧𝐠 𝐭𝐡𝐞 𝐆𝐀𝐌𝐀𝐌 𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰𝐬 - For all the preparation resources, strategies, tips, and roadmap that I followed, you can buy my ebook at - https://lnkd.in/d9xe8yfJ
+
+################################################################################################################################
+FAANG companies are hiring again, here are 8 vetted interview resources to help you pass your interviews you can save for later:
+
+System Design Resources:
+
+1. system-design-primer Github repo (275k stars)  - Good high-level review resource https://lnkd.in/g6yMEsGv
+
+2. Alex Xu’s system design guides - Great end-to-end resources about the process https://lnkd.in/gNB26q5W
+
+3. Roadmap for what topics to study - https://lnkd.in/gw__WDTD
+
+4. Designing Data-Intensive Applications - Great book for the concepts you need to understand for system design https://lnkd.in/gMhbvW23 
+
+Algo interview resources
+
+5. Github repo of Leetcode questions to study by company (https://lnkd.in/gYP-ND4W)
+
+6. Navdeep's Neetcode 150 - list of good questions to work through for practice https://lnkd.in/gyyb5WWB 
+
+7. CLRS book - Great book for learning the fundamental algorithms (just first two sections are most important) https://lnkd.in/g84bh_yd 
+
+Behavioral Interviews
+
+8. Lenny's first-round interview guide
+https://lnkd.in/gedSsNfe
+
+This curated list will give you a strong foundation but there’s no substitute for real practice. The best you could do is get some mock interviews and feedback from people who interview for their company. Best of luck!
+
