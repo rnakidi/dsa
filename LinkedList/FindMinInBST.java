@@ -20,7 +20,8 @@ class Solution {
 		
 		if (rightMin < min) {
 			min = rightMin;
-		}		
+		} 
+		// min = Math.min(min, Math.min(leftMin, rightMin));
 		return min;		
 	}
 }
