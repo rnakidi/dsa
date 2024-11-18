@@ -17,7 +17,7 @@ Binary Tree Left Side View
  */
 class Solution {
     static int maxLevel;
-    public List<Integer> rightSideView(TreeNode root) {
+    public List<Integer> leftSideView(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
         maxLevel = 0;
         util(root, ans, 1);
@@ -35,6 +35,6 @@ class Solution {
         }
 
         util(root.left, ans, level + 1);
-        util(root.left, ans, level + 1);        
+        util(root.right, ans, level + 1);        
     }
 }
