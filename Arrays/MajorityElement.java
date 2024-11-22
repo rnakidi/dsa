@@ -18,3 +18,8 @@ class Solution {
         return res;
     }
 }
+
+- If sorted:
+Arrays.sort(nums);
+int len  = nums/2;
+return nums[len];
