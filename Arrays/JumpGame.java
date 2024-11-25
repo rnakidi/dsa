@@ -9,7 +9,7 @@ class Solution {
             if (i > maxReach) {
                 return false;
             }
-            maxReach = Math.max(maxReach, i + nums[i]);
+            maxReach = Math.max(maxReach, i + nums[i]); // Maximum reach at each index
             if (maxReach >= len - 1) {
                 return true;
             }
