@@ -21,5 +21,5 @@ class Solution {
 
 - If sorted:
 Arrays.sort(nums);
-int len  = nums/2;
+int len  = nums.length/2;
 return nums[len];
