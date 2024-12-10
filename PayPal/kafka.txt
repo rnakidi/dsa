@@ -1,0 +1,1 @@
+Kafka - https://developer.paypal.com/community/blog/scaling-kafka-to-support-paypals-data-growth/
