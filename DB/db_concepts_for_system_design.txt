@@ -1,0 +1,43 @@
+DB concepts for System design
+#############################
+
+[1] How youtube scaled MySQL DB to millions of TPS
+
+https://lnkd.in/gWnu3yb4
+
+[2] How Discord moved from MongoDB to Cassandra
+
+https://lnkd.in/gBqre_Sp
+
+[3] How to answer "why NoSQL" in an interview.
+
+https://lnkd.in/gFaNXzpw
+
+[4] Why did Facebook build Cassandra
+
+https://lnkd.in/gN8eaBuk
+
+[5] How to create schema in NoSQL DB
+
+https://lnkd.in/g5yS2cxu
+
+[6] How did Discord fixed database key during migration
+
+https://lnkd.in/gX3vRuGb
+
+[7] Complete guide for scaling a database 
+
+https://lnkd.in/gh5HbjmZ
+
+[8] How does high write throughput database works
+
+https://lnkd.in/gG_yEpgA
+
+
+BONUS # 1: 30 sec interview conversation on databases
+
+https://lnkd.in/gcKxAmTh
+
+BONUS # 2: 4 database papers you must read
+
+https://lnkd.in/gUhxZ83b
