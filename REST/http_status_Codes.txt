@@ -1,0 +1,39 @@
+HTTP Status Codes:
+
+Each request demands a response with its own HTTP status code.
+You can classify them into 5 categories.
+
+𝟮𝗫𝗫: 𝗦𝘂𝗰𝗰𝗲𝘀𝘀
+The client’s request was successfully received, understood, and processed.
+
+• 200 OK: The request succeeded. Most common for GET and POST.
+• 201 Created: A new resource was successfully created (e.g., after a POST).
+• 202 Accepted: The request was received but has not yet been acted upon (useful for async processing).
+• 204 No Content: The server processed the request, but there's no content to send back.
+
+𝟯𝗫𝗫: 𝗥𝗲𝗱𝗶𝗿𝗲𝗰𝘁𝗶𝗼𝗻
+Further action is needed to complete the request, often requiring the client to follow a different URL.
+
+• 301 Moved Permanently: The resource has been permanently moved to a new URL.
+• 302 Found: Temporary redirection to another URL.
+• 303 See Other: Directs the client to retrieve the resource from a different URI, typically after a POST.
+• 304 Not Modified: The resource has not been modified since the last request (used with caching).
+• 307 Temporary Redirect: Like 302 but ensures the method remains the same (e.g., POST stays POST).
+
+𝟰𝗫𝗫: 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗰𝗹𝗶𝗲𝗻𝘁
+Indicates errors where the client’s request cannot be fulfilled due to issues.
+
+• 400 Bad Request: The server cannot or will not process the request due to client error (e.g., invalid JSON).
+• 401 Unauthorized: Authentication is required and has failed or not been provided.
+• 403 Forbidden: The client is authenticated but doesn't have permission to access the resource.
+• 404 Not Found: The requested resource could not be found.
+• 405 Method Not Allowed: The method is not allowed for the resource (e.g., PUT on a read-only endpoint).
+• 422 Unprocessable Entity: The server understands the request but can't process the contained instructions (common in validation errors).
+
+𝟱𝗫𝗫: 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝘀𝗲𝗿𝘃𝗶𝗰𝗲
+There is a server-side error preventing it from fulfilling a valid request.
+
+• 500 Internal Server Error: A generic error message for unexpected issues on the server.
+• 502 Bad Gateway: The server received an invalid response from an upstream server.
+• 503 Service Unavailable: The server is down or overloaded.
+• 504 Gateway Timeout: The server didn't receive a timely response from an upstream server.
