@@ -1,0 +1,9 @@
+Basics to advance system design resources:
+
+High Level Design from Basics to Advanced: https://lnkd.in/d8eDwYVA
+
+Low Level Design from Basics to Advanced: https://lnkd.in/dJkgzKxf
+
+Spring Boot from Basics to Advanced (All Videos are in English): https://lnkd.in/gz2A5ih2
+
+JAVA from Basics to Advanced (All Videos are in English): https://lnkd.in/dUNA6vsU
