@@ -1,0 +1,64 @@
+DSA Basics:
+
+1. Binary Search: Algorithm used in sorted array by repeatedly dividing the search interval into half.
+ - https://lnkd.in/dxk7kdeb
+ - https://lnkd.in/dTDhWNqi
+
+2. Breath First Search: Algorithm that starts traverse the graph from the root node & explores all the neighboring nodes.
+ - https://lnkd.in/dTx6bYTY
+ - https://lnkd.in/duepSA59
+
+3. Depth First Search: Algorithm traverse a graph in a depthward motion and uses a stack to remember.
+ - https://lnkd.in/dAhPBzEm
+ - https://lnkd.in/dtaEpzrC
+
+4. Inorder Tree Traversal: In inorder, you traverse from left subtree to the root then to the right subtree.
+ - https://lnkd.in/dcg9RE42
+ - https://lnkd.in/dyCemmkC
+
+5. Preorder Tree Traversal: In preorder, you traverse from the root to the left subtree then to the right subtree.
+ - https://lnkd.in/dqn45n8C
+ - https://lnkd.in/dhPg62s5
+
+6. Postorder Tree Traversal: In postorder, you traverse from left of the subtree to the right of the subtree then to the root.
+ - https://lnkd.in/dRjXYP6y
+ - https://lnkd.in/dksDacAm
+
+7. Insertion Sort: Algorithm works similar to the way you sort playing cards in your hand.
+ - https://lnkd.in/dtkQua_Q
+ - https://lnkd.in/dZCeYS6G
+
+8. Selection Sort: Algorithm that works by repeatedly selecting the smallest element from the the sorted list.
+ - https://lnkd.in/dfD5HaZB
+ - https://lnkd.in/dz2dt-sQ
+
+9. Merge Sort: Algorithm that works by dividing an array into smaller subarrays, sorting each subarray.
+ - https://lnkd.in/dt-zCrtp
+ - https://lnkd.in/dZH54Kuy
+
+10. Quick Sort: Highly effective sorting technique that divides a large data array into smaller ones.
+ - https://lnkd.in/d3NNhCNp
+ - https://lnkd.in/d6XtDa4c
+
+11. Counting Sort: Counting sort is a sorting technique based on keys between a specific range.
+ - https://lnkd.in/dKpeS-6k
+ - https://lnkd.in/dUia2t2Z
+
+12. Heap Sort: Heap sort is a comparison-based sorting technique based on Binary Heap data structure.
+ - https://lnkd.in/dr6-fC4R
+ - https://lnkd.in/dFUuBpNp
+
+13. Kruskal's Algorithm: Used to find the minimum spanning tree for a connected weighted graph.
+ - https://lnkd.in/dRF-UWFv
+
+14. Floyd Warshall Algorithm: Finding the shortest path between all the pairs of vertices in the weighted graph.
+ - https://lnkd.in/dtKdK-am
+ - https://lnkd.in/dYuQMyKA
+
+15. Dijkstra's Algorithm: To find the shortest path betn the nodes in the graph.
+ - https://lnkd.in/djmrQhAy.
+ - https://lnkd.in/dCRg2SJE
+
+16. Kadane's Algorithm: To find the maximum sum of contiguous subarray in an arr.
+ - https://lnkd.in/dT-K4x5y
+ - https://lnkd.in/dZt3wyC7
