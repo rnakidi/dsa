@@ -426,3 +426,6 @@ public class MyString {
 
 }
 
+
+
+https://medium.com/@mehar.chand.cloud/java-stream-coding-interview-questions-part-1-dc39e3575727
