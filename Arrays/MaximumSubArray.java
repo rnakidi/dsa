@@ -44,7 +44,6 @@ An another approach which has better performance than the above one.
     public int maxSubArray(int[] nums) {
         int maxSum = nums[0];
         int curSum = 0;
-        int res = nums[0];
         for (int num : nums) {
             curSum += num;
             if (curSum > maxSum) {
