@@ -42,8 +42,8 @@ Algorithm Load Balancing
 🔎Description: Routes requests based on the content of the request (e.g., URL patterns). 
 🕯Use Case: Useful for microservices architectures where different services handle different request types.
 
+![image](https://github.com/user-attachments/assets/f9178237-59f8-4384-a055-e2a1b787c58d)
 
-![Uploading image.png…]()
 
 Source/Credit:https://www.linkedin.com/posts/sina-riyahi_csharp-efcore-dotnet-activity-7288119430700568576-77x3?utm_source=share&utm_medium=member_desktop
 
