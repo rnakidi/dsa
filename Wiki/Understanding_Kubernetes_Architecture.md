@@ -29,3 +29,6 @@ With this robust design, Kubernetes ensures high availability, scalability, and 
 ![image](https://github.com/user-attachments/assets/3d02a688-c17e-4bfc-bcdf-079225b1cef3)
 
 Source/Credit: https://www.linkedin.com/posts/sachin-jha-565151211_kubernetes-cloudcomputing-devops-activity-7287491619111534593-b7aZ?utm_source=share&utm_medium=member_desktop
+
+![image](https://github.com/user-attachments/assets/2b9fbacd-6694-4739-a7ed-c8636bb0d8b9)
+
