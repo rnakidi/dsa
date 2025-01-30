@@ -1,5 +1,5 @@
-Java Developer Interview Questions for Experienced
-hashtag#java hashtag#interview hashtag#preparation
+Java Developer Interview Questions for Experienced:
+
 1.     You need to handle 1 million requests per second. How would you scale your backend architecture?
 2.     If you are building an order management system, how would you design the services? (Database choices, API interactions, scalability)
 3.     Design a simple service that asynchronously processes tasks using Spring Boot.
