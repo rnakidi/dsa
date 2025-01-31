@@ -1,4 +1,4 @@
-Java Developer Interview Questions for Experienced:
+Java Developer Interview Questions for Experienced: https://algomaster.io/practice/dsa-patterns
 
 1.     You need to handle 1 million requests per second. How would you scale your backend architecture?
 2.     If you are building an order management system, how would you design the services? (Database choices, API interactions, scalability)
