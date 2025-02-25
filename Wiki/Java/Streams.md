@@ -6,4 +6,6 @@ https://medium.com/@mehar.chand.cloud/java-stream-hard-interview-questions-54ea0
 
 https://javaconceptoftheday.com/solving-real-time-queries-using-java-8-features-employee-management-system/#google_vignette
 
+https://binkurt.blogspot.com/2017/10/exercises-to-study-java-stream-api.html
+
 ![image](https://github.com/user-attachments/assets/db288a84-f9c6-48a3-907a-77436e1c0408)
