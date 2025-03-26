@@ -1,0 +1,31 @@
+1. Write a function to determine whether duplicate elements in each array are within a given distance of each other.
+https://www.naukri.com/code360/library/check-if-a-given-array-contains-duplicate-elements-within-k-distance-from-each-other
+
+public static boolean checkDuplicates(int[] nums, int n, int k)
+	 {
+		   HashSet<Integer> s = new HashSet<Integer>();
+
+		   if (k <= 0)
+		   {
+			   return false;
+		   }
+		   if (k >= n)
+		   {
+			   k = n - 1;
+		   }
+
+		   for (int i = 0; i < n; i++)
+		   {
+			   if (i > k)
+			   {
+				   s.remove(nums[i - k - 1]);
+			   }
+			   if (s.contains(nums[i]))
+			   {
+				   return true;
+			   }
+			   s.add(nums[i]);
+		   }
+
+		   return false;
+	 }
