@@ -178,7 +178,7 @@ class LRUCache {
  * obj.put(key,value);
  */
 
-Using LinkedHashMap:
+Using LinkedHashMap
 ######################
 import java.util.LinkedHashMap;
 import java.util.Map;
