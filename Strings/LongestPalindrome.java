@@ -3,8 +3,6 @@ Given a string s which consists of lowercase or uppercase letters, return the le
 
 Letters are case sensitive, for example, "Aa" is not considered a palindrome.
 
- 
-
 Example 1:
 
 Input: s = "abccccdd"
@@ -25,25 +23,25 @@ s consists of lowercase and/or uppercase English letters only.
 class Solution {
     public int longestPalindrome(String s) {
         var countMap = new HashMap<Character, Long>();
-		for (char ch : s.toCharArray()) {
-			countMap.put(ch,  countMap.getOrDefault(ch, 0l) + 1);
-		}
-		
-		int ans = 0;
-		int oddCount = 0;
-		for (long value : countMap.values()) {
-			if (value % 2 == 0) { // even
-				ans += value;
-			} else {
-				ans += value - 1;
-				oddCount++;
-			}
-		}
-		
-		if (oddCount > 0) {
-			ans += 1;
-		}
-		
-		return ans;
+	for (char ch : s.toCharArray()) {
+		countMap.put(ch,  countMap.getOrDefault(ch, 0l) + 1);
 	}
+		
+	int ans = 0;
+	int oddCount = 0;
+	for (long value : countMap.values()) {
+		if (value % 2 == 0) { // even
+			ans += value;
+		} else {
+			ans += value - 1;
+			oddCount++;
+		}
+	}
+		
+	if (oddCount > 0) {
+		ans += 1;
+	}
+		
+	return ans;
+  }
 }
