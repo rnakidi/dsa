@@ -19,7 +19,7 @@ Constraints:
 1 <= s1.length, s2.length <= 104
 s1 and s2 consist of lowercase English letters.
 
-NOTE: This problem is excatly same as 438. Find All Anagrams in a String
+NOTE: This problem is excatly same as 438. Find All Anagrams in a String(https://github.com/rnakidi/dsa/blob/main/Strings/FindAllAnagramsInAString.java)
   
 class Solution {
 	public boolean checkInclusion(String s1, String s2) {
