@@ -48,7 +48,7 @@ class Solution {
         int prevIndex = -1;
         for (char ch : s.toCharArray()) {
             int index = t.indexOf(ch);
-            if (index < prevIndex) {
+            if (index <= prevIndex) {
                 return false;
             }
             prevIndex = index;
@@ -61,13 +61,15 @@ class Solution {
         if (s.length() > t.length()) {
             return false;
         }
-        
+
+        int prevIndex = -1;
         int index = 0;
         for (char ch : s.toCharArray()) {
             index = t.indexOf(ch, index);
-            if (index < 0) {
+            if (index <= prevIndex) {
                 return false;
             }
+            prevIndex = index;
         }
 
         return true;
