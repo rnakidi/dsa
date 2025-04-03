@@ -56,5 +56,21 @@ class Solution {
 
         return true;
     }
+
+     public boolean isSubsequence1(String s, String t) {
+        if (s.length() > t.length()) {
+            return false;
+        }
+        
+        int index = 0;
+        for (char ch : s.toCharArray()) {
+            index = t.indexOf(ch, index);
+            if (index < 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
 
