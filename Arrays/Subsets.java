@@ -33,8 +33,8 @@ class Solution {
 private void backtrack(int[] nums, int l, List<Integer> subSet, List<List<Integer>> ans){
     list.add(new ArrayList<>(subSet));
     for(int i = l; i < nums.length; i++){
-        tempList.add(nums[i]);
-        backtrack(list, tempList, nums, i + 1);
-        tempList.remove(tempList.size() - 1);
+        subSet.add(nums[i]);
+        backtrack(nums, i + 1, subSet, ans);
+        subSet.remove(subSet.size() - 1);
     }
 }
