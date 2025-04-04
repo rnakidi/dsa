@@ -24,6 +24,27 @@ Constraints:
 1 <= nums.length <= 10
 -10 <= nums[i] <= 10
 
+class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        Arrays.sort(nums);
+
+        List<List<Integer>> ans = new ArrayList<>();
+        List<Integer> subSet = new ArrayList<>();
+        backtrack(nums, 0, subSet, ans);
+        return ans;
+    }
+}
+
+private void backtrack(int[] nums, int l, List<Integer> subSet, List<List<Integer>> ans){
+    list.add(new ArrayList<>(subSet));
+    for(int i = l; i < nums.length; i++){
+        if (i > l && nums[i] == nums[i-1]) continue; // skip duplicates
+        subSet.add(nums[i]);
+        backtrack(nums, i + 1, subSet, ans);
+        subSet.remove(subSet.size() - 1);
+    }
+}
+ 
 Solution
 class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
