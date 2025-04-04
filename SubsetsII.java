@@ -31,11 +31,11 @@ class Solution {
 
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> subSet = new ArrayList<>();
-        helper(nums, ans, subSet, 0);
+        helper(nums, 0, subSet, ans);
         return ans;
     }
     
-    private void helper(int[] nums, List<List<Integer>> ans, List<Integer> subSet, int index) {
+    private void helper(int[] nums, int index, List<Integer> subSet, List<List<Integer>> ans) {
 
         if (!ans.contains(subSet)) {
             ans.add(new ArrayList<>(subSet));
