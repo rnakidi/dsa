@@ -1,4 +1,6 @@
-90. Subsets II
+90. Subsets II - https://leetcode.com/problems/subsets-ii/description/
+NOTE: This is a BACKTRACKING problem - A TEMPLATE similar to PERMUNTATION will be used to solve this.
+ 
 Description
 Given an integer array nums that may contain duplicates, return all possible 
 subsets
