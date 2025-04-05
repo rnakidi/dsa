@@ -22,7 +22,7 @@ Constraints:
 All the integers in nums are unique.
 nums is sorted in ascending order.
 
-Approach1: Loop
+Approach1: Iterative
  
 class Solution {
     public int search(int[] nums, int target) {
