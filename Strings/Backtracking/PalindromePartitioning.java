@@ -41,9 +41,9 @@ class Solution {
 
         for (int i = index; i < s.length(); i++) {
             if (isPalindrome(s, index, i)) {
-                subSet.add(s.substring(index, i+1));
-                helper(s, subSet, results, i+1);
-                subSet.remove(subSet.size() - 1);
+                subSet.add(s.substring(index, i+1)); // Place string
+                helper(s, subSet, results, i+1); // Recursively solve for next position
+                subSet.remove(subSet.size() - 1); // Backtrack: remove string for trying next position
             }
         }
     }
