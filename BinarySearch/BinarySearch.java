@@ -1,4 +1,4 @@
-704. Binary Search - https://leetcode.com/problems/binary-search/description/
+#704. Binary Search - https://leetcode.com/problems/binary-search/description/
 Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
 
 You must write an algorithm with O(log n) runtime complexity.
@@ -22,7 +22,7 @@ Constraints:
 All the integers in nums are unique.
 nums is sorted in ascending order.
 
-Approach1: Iterative
+##Approach1: Iterative
  
 class Solution {
     public int search(int[] nums, int target) {
@@ -45,7 +45,7 @@ class Solution {
     }
 }
 
-Approach1: Recursive
+##Approach1: Recursive
 class Solution {
     public int search(int[] nums, int target) {
         return helper(nums, 0, nums.length, target);
