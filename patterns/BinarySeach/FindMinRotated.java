@@ -12,7 +12,7 @@ class Solution {
         while (left <= right) {
             int mid = left + (right - left) / 2;
             // if <= last element, then belongs to lower half
-            if (arr.get(mid) <= arr.get(arr.size() - 1)) {
+            if (arr.get(mid) <= arr.get(arr.size() - 1)) { // Feasible function or condition
                 boundaryIndex = mid;
                 right = mid - 1;
             } else {
