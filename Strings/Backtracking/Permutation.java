@@ -19,15 +19,16 @@ class Permutation {
 			res.add(s);
 			return;
 		}
-		
+
+		// Explore possibilities
 		for (int i = l; i < s.length(); i++) {
 			if (l != i && !canPermute(s, l, i)) {
 				continue;
 			}
 			
-			s = swap(s, l, i);
-			helper(s, l+1, res);
-			s = swap(s, l, i);
+			s = swap(s, l, i); // Explore or chose (Make a dcision or chose a path)
+			helper(s, l+1, res); // Explore further/next
+			s = swap(s, l, i); // Undo - backtrack
 		}
 	}
 
