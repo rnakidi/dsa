@@ -22,6 +22,8 @@ Constraints:
 All the integers in nums are unique.
 nums is sorted in ascending order.
 
+Approach1: Loop
+ 
 class Solution {
     public int search(int[] nums, int target) {
         int low = 0;
@@ -40,5 +42,12 @@ class Solution {
         }
 
         return -1;
+    }
+}
+
+Approach1: Recursive
+class Solution {
+    public int search(int[] nums, int target) {
+
     }
 }
