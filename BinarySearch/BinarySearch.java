@@ -54,7 +54,7 @@ class Solution {
     private helper(int[] nums, int low, int high, int target) {
       if (low <= high) {
         int mid = low + (high - low)/2;
-        if (nums[mid] == target) {
+        if (target == nums[mid]) {
           return mid;
        }
 
