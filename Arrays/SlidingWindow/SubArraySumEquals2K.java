@@ -3,7 +3,7 @@ Input: int[][] nums1 = subArraySum(new int[] {1,1,1}, 2); O/P: [0, 1] [1, 2], wh
 
 class Solution {
     public int[][] subArraySum(int[] nums, int target) {
-        int left = 0;
+  		int left = 0;
   		int right = 0;
   		int sum = 0;
   		List<int[]> res = new ArrayList<>();
@@ -20,7 +20,7 @@ class Solution {
     			    left++;
     			}
     			right++;
-        }
-        return res.toArray(new int[res.size()][]);
+  		}
+  		return res.toArray(new int[res.size()][]);
     }
 }
