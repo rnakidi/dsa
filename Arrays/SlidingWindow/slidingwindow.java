@@ -1,6 +1,6 @@
 SlidingWindow high level template
 
-public <return> slidingWindowFunc() {
+public <output_param> slidingWindowFunc(<input_params>) {
   int left = 0;
   int right = 0;
   while (right < length) {
@@ -14,5 +14,5 @@ public <return> slidingWindowFunc() {
       }
       // Collect base case results
   }
-  return <return_value>;
+  return <output_param>;
 }
