@@ -2,7 +2,7 @@ Input: int[][] nums = subArraySum(new int[] {1,4,20,3,10,5,15,3}, 33); O/P: [2, 
 Input: int[][] nums1 = subArraySum(new int[] {1,1,1}, 2); O/P: [0, 1] [1, 2], which is [[1,1],[1,1]]
 
 class Solution {
-    public List<List<String>> solveNQueens(int n) {
+    public int[][] subArraySum(int[] nums, int target) {
       int left = 0;
   		int right = 0;
   		int sum = 0;
@@ -20,6 +20,7 @@ class Solution {
             left++;
           }
           right++;
-  		}		
+        }
+        return res.toArray(new int[res.size()][]);
     }
 }
