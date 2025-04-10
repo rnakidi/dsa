@@ -10,8 +10,8 @@ class Solution {
   		while (right < nums.length) {
     			sum += nums[right];
     			while (sum > target && left <= right) {
-                    sum -= nums[left];
-                    left++;
+    			    sum -= nums[left];
+    			    left++;
                 }
   			
           if (sum == target) {
