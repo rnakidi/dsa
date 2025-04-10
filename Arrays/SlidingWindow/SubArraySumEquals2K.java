@@ -16,7 +16,7 @@ class Solution {
   			
     			if (sum == target) {
     			    res.add(new int[] {left, right});
-    			    sum -= nums[left];
+    			    sum -= nums[left]; // This line and the below one is optional but nice to have
     			    left++;
     			}
     			right++;
