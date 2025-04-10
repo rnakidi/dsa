@@ -48,9 +48,9 @@ class Solution {
 		} else {
 			// Explore all possibilities
 			for (int i = l; i < nums.length; i++) {
-                if (i > l && nums[i] == nums[i-1]) {
-                    continue;
-                }
+				if (i > l && nums[i] == nums[i-1]) {
+				     continue;
+				}
 				subResult.add(nums[i]); // Explore or make a choice
 				combinationSum(nums, i+1, target - nums[i] , subResult, result); // Explore further
 				subResult.remove(subResult.size() - 1); // Undo - backtrack
