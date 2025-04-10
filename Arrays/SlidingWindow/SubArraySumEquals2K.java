@@ -12,14 +12,14 @@ class Solution {
     			while (sum > target && left <= right) {
     			    sum -= nums[left];
     			    left++;
-                }
+    			}
   			
-          if (sum == target) {
-            res.add(new int[] {left, right});
-            sum -= nums[left];
-            left++;
-          }
-          right++;
+    			if (sum == target) {
+    			    res.add(new int[] {left, right});
+    			    sum -= nums[left];
+    			    left++;
+    			}
+    			right++;
         }
         return res.toArray(new int[res.size()][]);
     }
