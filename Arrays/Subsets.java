@@ -1,5 +1,5 @@
 Subsets : https://leetcode.com/problems/subsets/
-NOTE: BACKTRACKING problem use the template of Palndrome partioning(uses permutaation patter).
+NOTE: BACKTRACKING problem use the template of Palindrome partitioning(uses permutation pattern).
 Given an integer array nums of unique elements, return all possible subsets (the power set).
 
 The solution set must not contain duplicate subsets. Return the solution in any order.
@@ -32,9 +32,10 @@ class Solution {
 
 private void backtrack(int[] nums, int l, List<Integer> subSet, List<List<Integer>> ans){
     list.add(new ArrayList<>(subSet));
+    // Explore all possibilities
     for(int i = l; i < nums.length; i++){
-        subSet.add(nums[i]);
-        backtrack(nums, i + 1, subSet, ans);
-        subSet.remove(subSet.size() - 1);
+        subSet.add(nums[i]); // Explore
+        backtrack(nums, i + 1, subSet, ans); // Explore further
+        subSet.remove(subSet.size() - 1); // Undo - backtrack
     }
 }
