@@ -3,16 +3,16 @@ Input: int[][] nums1 = subArraySum(new int[] {1,1,1}, 2); O/P: [0, 1] [1, 2], wh
 
 class Solution {
     public int[][] subArraySum(int[] nums, int target) {
-      int left = 0;
+        int left = 0;
   		int right = 0;
   		int sum = 0;
   		List<int[]> res = new ArrayList<>();
   		while (right < nums.length) {
     			sum += nums[right];
     			while (sum > target && left <= right) {
-      				sum -= nums[left];
-      				left++;
-    		  }
+                    sum -= nums[left];
+                    left++;
+                }
   			
           if (sum == target) {
             res.add(new int[] {left, right});
