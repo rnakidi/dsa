@@ -30,6 +30,18 @@ Constraints:
 All elements of candidates are distinct.
 1 <= target <= 40
 
+Visualization:
+Decision Tree for candidates = [2, 3, 6, 7] and target = 7:
+                      []
+                    /   \
+                 [2]     []
+                /   \      \
+             [2,2]   [2]    [3]
+            /   \       \     \
+        [2,2,2]  [2,2,3]  [3,3] [7]
+	
+Valid combinations: [2, 2, 3], [7]
+
 T: O(2^n), S: O(n)
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
