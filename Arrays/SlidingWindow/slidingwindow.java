@@ -7,7 +7,7 @@ public <output_param> slidingWindowFunc(<input_params>) {
     // Apply logic involved with right index
     right++; // This can be moved to line #16 if needed
       while(condition && left <= right) {
-        // Apply logic involved with left index
+        // Apply logic involved with left index - a complete opposite logic of right index
         if (condition) { // Apply base case if needed
         }
           left++;
