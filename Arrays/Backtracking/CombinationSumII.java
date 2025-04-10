@@ -48,7 +48,7 @@ class Solution {
 		} else {
 			// Explore all possibilities
 			for (int i = l; i < nums.length; i++) {
-				if (i > l && nums[i] == nums[i-1]) {
+				if (i > l && nums[i] == nums[i-1]) { // Skip duplicates
 				     continue;
 				}
 				subResult.add(nums[i]); // Explore or make a choice
