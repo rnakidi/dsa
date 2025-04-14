@@ -34,3 +34,21 @@ Constraints:
     	return rows;      
     }
 }
+
+
+  public int[][] generate(int numRows) {
+    List<int[]> rows = new ArrayList<>();
+    for (int row = 0; row < numRows; row++) {
+      var subRow = new int[row + 1];
+      for (int j = 0; j <= row; j++) {
+          if (0 == j || j == row) {
+            subRow[j] = 1;
+          } else {
+            int val = rows.get(row-1)[j-1] + rows.get(row-1)[j];
+            subRow[j] = val;
+          }
+      }
+      rows.add(subRow);
+    }
+    return rows.toArray(new int[rows.size()][]);
+  }
