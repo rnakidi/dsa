@@ -8,7 +8,7 @@ class Solution {
 
         int maxSideLength = 0;
         int[][] dp = new int[rows][cols];
-        // Fill the dp with first row
+        // Fill the dp with first row - base case
         for (int c = 0; c < cols; c++) {
             if ('1' == matrix[0][c]) {
                 dp[0][c] = 1;
@@ -16,7 +16,7 @@ class Solution {
             }
         }
         
-        // Fill the dp with first column
+        // Fill the dp with first column - base case
         for (int r = 0; r < rows; r++) {
             if ('1' == matrix[r][0]) {
                 dp[r][0] = 1;
@@ -28,7 +28,7 @@ class Solution {
         for (int r = 1; r < rows; r++) {
             for (int c = 1; c < cols; c++) {
                 if ('1' == matrix[r][c]) {
-                    dp[r][c] = 1 + Math.min(dp[r-1][c], Math.min(dp[r-1][c-1], dp[r][c-1]));
+                    dp[r][c] = 1 + Math.min(dp[r-1][c], Math.min(dp[r-1][c-1], dp[r][c-1])); // // Recurrence relation
                     maxSideLength = Math.max(maxSideLength, dp[r][c]);
 
                 }
