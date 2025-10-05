@@ -7,8 +7,8 @@ class Solution {
         // Use Top Down DP + Memorization
         prefixSum = new int[len + 1];
 
-        // Prefix sum for O(1)
-        for (int i = 1; i < len; i++) {
+        // Prefix sum for O(1) lookup
+        for (int i = 1; i <= len; i++) {
             prefixSum[i] = prefixSum[i-1] + stones[i-1];
         }
 
