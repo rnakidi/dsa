@@ -23,26 +23,26 @@ Constraints:
 
 1 <= m, n <= 100
 
-Solution-Recursion without Memorization)(T:(2^n), S:O(n))
+Solution: Recursion(Top Down DP) without Memorization)(T:(2^n), S:O(n))
 class Solution {
     public int uniquePaths(int m, int n) {
         return util(0, 0, m, n);        
     }
 
     public int util(int r, int c, int m, int n) {
-        if (r < 0 || r >= m || c < 0 || c >= n) {
+        if (r < 0 || r >= m || c < 0 || c >= n) { // Base case
             return 0;
         }
 
-        if (r == m - 1 && c == n - 1) {
+        if (r == m - 1 && c == n - 1) { // Base case
             return 1;
         }
 
-        return util(r + 1, c, m, n) + util(r, c + 1, m, n);
+        return util(r + 1, c, m, n) + util(r, c + 1, m, n); // Recurrence relation
     }
 }
 
-Solution-Recurion with Memorization)(T:(n^2), S:O(n))
+Solution: Recurion(Top Down DP) with Memorization)(T:(n^2), S:O(n))
 class Solution {
     public int uniquePaths(int m, int n) {
         int[][] paths = new int[m][n];
@@ -65,3 +65,51 @@ class Solution {
         return paths[r][c] = util(r + 1, c, m, n, paths) + util(r, c + 1, m, n, paths);
     }
 }
+
+
+Solution: Bottom up DP with S(O(m*n))
+class Solution {
+    public int uniquePaths(int m, int n) {
+        int[][] dp = new int[m][n];
+
+        // Fill DP with first row
+        for (int c = 0; c < n; c++) { // base case
+            dp[0][c] = 1;
+        }
+
+        // Fill dp with first column
+        for (int r = 0; r < m; r++) { // base case
+            dp[r][0] = 1;
+        }
+
+        for (int r = 1; r < m; r++) {
+            for (int c = 1; c < n; c++) {
+                dp[r][c] = dp[r-1][c] + dp[r][c-1];  // Recurrence relation
+            }
+        }
+
+        return dp[m-1][n-1];
+    }
+}
+
+Solution: Bottom up DP with S(O(n))
+
+class Solution {
+    public int uniquePaths(int m, int n) {
+        int[] dp = new int[n];
+
+        // Fill DP
+        Arrays.fill(dp, 1); // base case
+
+
+        for (int r = 1; r < m; r++) {
+            for (int c = 1; c < n; c++) {
+                dp[c] = dp[c] + dp[c-1]; // Recurrence relation
+            }
+        }
+
+        return dp[n-1];
+    }
+}
+  
+  
