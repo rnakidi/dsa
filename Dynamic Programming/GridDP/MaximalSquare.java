@@ -47,3 +47,5 @@ class Solution {
         return maxSideLength * maxSideLength; // Area of the maximal square
     }
 }
+
+Time & Space complextity: T(O(r*c)) nd S(O(r*c))
