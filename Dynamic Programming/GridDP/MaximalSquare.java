@@ -9,7 +9,6 @@ Example 2:
 Input: matrix = [["0","1"],["1","0"]]
 Output: 1
 
-
 class Solution {
     public int maximalSquare(char[][] matrix) {
         int rows = matrix.length;
